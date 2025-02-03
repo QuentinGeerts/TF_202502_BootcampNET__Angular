@@ -21,7 +21,6 @@ Voir la [documentation](https://angular.dev/cli/new).
 ```bash
 ng generate component chemin/nomComposant [options]
 ```
-
 ```bash
 ng g c chemin/nom-composant [options]
 ```
