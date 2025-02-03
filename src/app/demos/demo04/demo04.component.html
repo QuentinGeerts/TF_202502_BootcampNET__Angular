@@ -1,0 +1,14 @@
+<h2>Demo 04: Event Binding</h2>
+
+<button (click)="changeSrc()">Clique sur moi pour afficher une surprise</button>
+
+<img [src]="src" width="300">
+
+<p (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam exercitationem temporibus quae, quam, quibusdam ex quaerat sunt veniam eligendi sed repellat quia dicta voluptate commodi repellendus officiis unde voluptatibus?
+</p>
+
+<p>Message: {{ message }}</p>
+<input type="text" [value]="message" (input)="changeValue($event)">
+
+<input type="text" [(ngModel)]="message">

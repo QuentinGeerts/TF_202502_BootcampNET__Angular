@@ -1,0 +1,9 @@
+<h2>Demo 03: Attribute Binding</h2>
+
+<img [src]="src" [alt]="alt" [title]="title" [width]="width" [height]="height">
+
+<img [src]="src2" alt="Beau chat" title="Chat" height="200">
+
+<!-- Attention, l'Attribute Binding est en One Way -->
+<p>Message: {{ message }}</p>
+<input type="text" [value]="message">
