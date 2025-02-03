@@ -1,0 +1,6 @@
+<h2>Exo 01: Le chronomètre (simple)</h2>
+
+<p>{{ compteur }}</p>
+<button (click)="start()" [disabled]="timer">Démarrer</button>
+<button (click)="stop()" [disabled]="!timer">Stopper</button>
+<button (click)="reset()" [disabled]="!compteur">Réinitialiser</button>
