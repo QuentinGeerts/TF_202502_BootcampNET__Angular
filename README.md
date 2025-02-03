@@ -3,7 +3,9 @@
 
 ## Création d'un projet
 
-> ng new NomProjet [options]
+```bash
+ng new NomProjet [options]
+```
 
 Options:
 - --routing : Ajout du routing
@@ -16,8 +18,12 @@ Voir la [documentation](https://angular.dev/cli/new).
 
 ## Créatio d'un composant
 
-> ng generate component chemin/nomComposant [options]
+```bash
+ng generate component chemin/nomComposant [options]
+```
 
-> ng g c chemin/nom-composant [options]
+```bash
+ng g c chemin/nom-composant [options]
+```
 
 
