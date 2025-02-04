@@ -7,6 +7,7 @@ import { Demo03Component } from './demo03/demo03.component';
 import { Demo04Component } from './demo04/demo04.component';
 import { DemosRoutingModule } from './demos-routing.module';
 import { DemosComponent } from './demos.component';
+import { Demo05Component } from './demo05/demo05.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DemosComponent } from './demos.component';
     Demo02Component,
     Demo03Component,
     Demo04Component,
+    Demo05Component,
   ],
   imports: [
     DemosRoutingModule,
