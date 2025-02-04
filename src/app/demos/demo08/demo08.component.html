@@ -1,0 +1,68 @@
+<h3>Demo 08: Directives structures</h3>
+
+<h4>*ngIf:</h4>
+
+<button (click)="isActive = !isActive">Afficher / Cacher</button>
+
+<p *ngIf="isActive; else toto">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eos obcaecati voluptatum facilis corrupti
+    animi distinctio non. Voluptates maiores repellendus illo! Quasi consequuntur animi nisi nesciunt officia
+    consectetur voluptas ducimus?
+</p>
+
+<ng-template #toto>
+    <p>
+        COUCOU
+    </p>
+</ng-template>
+
+<h5>Depuis Angular V17:</h5>
+
+@if (isActive)
+{
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eos obcaecati voluptatum facilis corrupti
+        animi distinctio non. Voluptates maiores repellendus illo! Quasi consequuntur animi nisi nesciunt officia
+        consectetur voluptas ducimus?
+    </p>
+}
+<!-- @else if (...) { ... } -->
+@else
+{
+    <p>
+        COUCOU
+    </p>
+}
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eos obcaecati voluptatum facilis corrupti
+    animi distinctio non. Voluptates maiores repellendus illo! Quasi consequuntur animi nisi nesciunt officia
+    consectetur voluptas ducimus?
+</p>
+
+<h4>*ngFor:</h4>
+
+<ul>
+    <li *ngFor="let p of persons; index as i; even as isEven; odd as isOdd; first as isFirst; last as isLast">
+        <span [ngClass]="{first: isFirst, last: isLast}">{{ i }} - {{ p.id }}</span>
+        <span [ngClass]="{even: isEven, odd: isOdd}">{{ p.lastname }} {{ p.firstname }}</span>
+    </li>
+</ul>
+
+
+<h5>Depuis Angular V17:</h5>
+
+@for (p of persons; track $index) {
+    <li>
+        <span [ngClass]="{first: $first, last: $last}">{{ $index }} - {{ p.id }}</span>
+        <span [ngClass]="{even: $even, odd: $odd}">{{ p.lastname }} {{ p.firstname }}</span>    
+    </li>
+}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

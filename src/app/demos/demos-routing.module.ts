@@ -7,6 +7,7 @@ import { Demo04Component } from './demo04/demo04.component';
 import { Demo05Component } from './demo05/demo05.component';
 import { Demo06Component } from './demo06/demo06.component';
 import { Demo07Component } from './demo07/demo07.component';
+import { Demo08Component } from './demo08/demo08.component';
 
 const routes: Routes = [
   // http://localhost:4200/demos => DemosComponent
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'demo05', component: Demo05Component },
   { path: 'demo06', component: Demo06Component },
   { path: 'demo07', component: Demo07Component },
+  { path: 'demo08', component: Demo08Component },
 ];
 
 @NgModule({
