@@ -1,7 +1,6 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 import { Demo01Component } from './demo01/demo01.component';
 import { Demo02Component } from './demo02/demo02.component';
 import { Demo03Component } from './demo03/demo03.component';
@@ -19,9 +18,10 @@ import { DemosComponent } from './demos.component';
     Demo04Component,
   ],
   imports: [
-    CommonModule,
     DemosRoutingModule,
-    FormsModule, // Important pour le two-way binding
+    // CommonModule,
+    // FormsModule, // Important pour le two-way binding
+    SharedModule,
   ]
 })
 export class DemosModule { }
