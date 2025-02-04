@@ -1,0 +1,41 @@
+<h3>Demo 07: Directives de composant</h3>
+
+<h4>NgStyle:</h4>
+
+<p [ngStyle]="{  'color': color, 'font-size.px': fontSize }">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequuntur optio libero sequi dolore iusto placeat
+    minus totam sed eaque quas vel aperiam, ullam odio iste laudantium enim facere ipsa!
+</p>
+
+<p [ngStyle]="stylesObj">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error eos cumque! Cupiditate distinctio at qui placeat
+    ipsum ab labore optio. Esse possimus architecto in placeat, alias animi minima sint.
+</p>
+
+<h4>NgClass:</h4>
+
+<p [ngClass]="{  'active test': isActive, disabled: !isActive  }">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, in sint ut iste iure culpa vitae architecto? Quo
+    necessitatibus tenetur dolorem provident esse officia iusto, facilis autem aspernatur, quidem repellat.
+</p>
+
+<p>
+    <label>
+        <input type="checkbox" [(ngModel)]="isActive"> {{ isActive ? 'Activé' : 'Désactivé' }}
+    </label>
+</p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
