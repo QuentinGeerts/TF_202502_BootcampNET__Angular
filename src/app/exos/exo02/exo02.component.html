@@ -1,0 +1,20 @@
+<h2>Exercice 02 - Le chronomètre (Pipes)</h2>
+
+<p>Reprennez l'exercice précédent et ajouter un pipe sur le nombre de 
+secondes pour afficher un chronomètre au format "hh:mm:ss".</p>
+
+<hr>
+
+<p>{{ compteur | chrono }}</p>
+<button (click)="start()" [disabled]="timer">Démarrer</button>
+<button (click)="stop()" [disabled]="!timer">Stopper</button>
+<button (click)="reset()" [disabled]="!compteur">Réinitialiser</button>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

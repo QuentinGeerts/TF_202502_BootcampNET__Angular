@@ -9,6 +9,7 @@ import { Exo01Component } from './exos/exo01/exo01.component';
 import { ExosComponent } from './exos/exos.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
+import { Exo02Component } from './exos/exo02/exo02.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SharedModule } from './shared/shared.module';
     ExosComponent,
     NotFoundComponent,
     NavbarComponent,
+    Exo02Component,
   ],
   imports: [
     BrowserModule,

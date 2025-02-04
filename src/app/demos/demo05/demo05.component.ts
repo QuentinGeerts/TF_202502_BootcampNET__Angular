@@ -10,5 +10,6 @@ import { Component } from '@angular/core';
 export class Demo05Component {
 
   message: string = "hElLo WoRlD !";
+  now: Date = new Date();
 
 }

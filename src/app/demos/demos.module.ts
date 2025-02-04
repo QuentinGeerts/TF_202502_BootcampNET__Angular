@@ -8,6 +8,7 @@ import { Demo04Component } from './demo04/demo04.component';
 import { DemosRoutingModule } from './demos-routing.module';
 import { DemosComponent } from './demos.component';
 import { Demo05Component } from './demo05/demo05.component';
+import { Demo06Component } from './demo06/demo06.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { Demo05Component } from './demo05/demo05.component';
     Demo03Component,
     Demo04Component,
     Demo05Component,
+    Demo06Component,
   ],
   imports: [
     DemosRoutingModule,

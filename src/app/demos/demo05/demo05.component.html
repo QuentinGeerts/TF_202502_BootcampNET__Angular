@@ -10,14 +10,40 @@
 
 <h4>Number:</h4>
 
-
 <p>DecimalPipe: {{ 42 | number }}</p>
 <p>DecimalPipe: {{ 42 | number : '3.2-3' }}</p>
 <p>DecimalPipe: {{ 4222 | number : '3.2-3' }}</p>
 <p>DecimalPipe: {{ 4222.2228 | number : '3.2-3' }}</p>
+<!-- Ajouter la méthode RegisterLocaleData dans main.ts -->
 <p>DecimalPipe: {{ 4222.2228 | number : '3.2-3' : 'en-US' }}</p>
 <p>DecimalPipe: {{ 4222.2228 | number : '3.2-3' : 'fr-BE' }}</p>
 <p>DecimalPipe: {{ 4222.2228 | number : '3.2-3' : 'nl-BE' }}</p>
+
+<h4>Currency:</h4>
+
+<p>CurrecyPipe: {{ 123456.789 }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency : 'EUR' }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency : 'EUR' : 'code' }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency : 'EUR' : 'symbol' }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency : 'EUR' : 'symbol-narrow' }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency : 'EUR' : 'symbol' : '3.4-6' }}</p>
+<p>CurrecyPipe: {{ 123456.789 | currency : 'EUR' : 'symbol' : '3.4-6' : 'fr-BE' }}</p>
+
+<h4>Json:</h4>
+
+<p>JsonPipe: {{ { name: 'John', age: 30 } }}</p>
+<p>JsonPipe: {{ { name: 'John', age: 30 } | json }}</p>
+
+<h4>Date:</h4>
+
+<p>DatePipe: {{ now }}</p>
+<p>DatePipe: {{ now | date }}</p>
+<p>DatePipe: {{ now | date : 'dd/MM/Y' }}</p>
+<p>DatePipe: {{ now | date : 'd MMMM Y' }}</p>
+<p>DatePipe: {{ now | date : 'd MMMM Y HH:mm:ss' }}</p>
+<p>DatePipe: {{ now | date : 'd MMMM Y HH:mm:ss' : '+0100' }}</p>
+<p>DatePipe: {{ now | date : 'd MMMM Y HH:mm:ss' : '+0100' : 'fr-BE'| titlecase }}</p>
 
 <br>
 <br>

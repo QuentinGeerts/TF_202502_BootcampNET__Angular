@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DemosComponent } from './demos/demos.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { Exo01Component } from './exos/exo01/exo01.component';
+import { Exo02Component } from './exos/exo02/exo02.component';
 import { ExosComponent } from './exos/exos.component';
 import { HomeComponent } from './home/home.component';
 
@@ -26,6 +27,7 @@ const routes: Routes = [
     path: 'exos', component: ExosComponent, children: [
       // http://localhost:4200/exos/exo01 => Exo01Component
       { path: 'exo01', component: Exo01Component },
+      { path: 'exo02', component: Exo02Component },
     ]
   },
 
